@@ -12,11 +12,18 @@ var heroImages = {
     sexy: './images/hero-img/hero-img-pink.png'
 };
 
+var missionImages = {
+    light: './images/mission-image/it-hero-light.png',
+    dark: './images/mission-image/it-hero-dark.png',
+    sexy: './images/mission-image/it-hero-pink.png'
+};
+
 // wichtige elemente holen
 var switcher = document.getElementById('theme-switcher');
 var menuButton = document.getElementById('theme-menu-button');
 var menu = document.getElementById('theme-menu');
 var heroImage = document.querySelector('.hero-image');
+var missionImage = document.querySelector('.mission-image');
 var themeSelectValue = document.getElementById('theme-select-value');
 var menuItems = Array.from(document.querySelectorAll('[data-theme-option]'));
 
@@ -24,6 +31,7 @@ var menuItems = Array.from(document.querySelectorAll('[data-theme-option]'));
 function applyTheme(themeName) {
     document.documentElement.setAttribute('data-theme', themeName);
     heroImage.src = heroImages[themeName];
+    missionImage.src = missionImages[themeName];
     themeSelectValue.textContent = themeLabels[themeName];
 
     menuItems.forEach(function (menuItem) {
@@ -36,7 +44,7 @@ function applyTheme(themeName) {
 }
 
 // beim start ist light aktiv
-applyTheme('light');
+applyTheme(document.documentElement.getAttribute('data-theme') || 'light');
 
 // button klappt das menu auf und zu
 menuButton.addEventListener('click', function () {
