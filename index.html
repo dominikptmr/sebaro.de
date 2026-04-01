@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Sebaro</title>
+    <script>
+        (function () {
+            var savedTheme = localStorage.getItem('theme-mode') || 'light';
+            document.documentElement.setAttribute('data-theme', savedTheme);
+        })();
+    </script>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="hero">
+        <div class="container">
+            <header class="header-bar">
+                <a href="./" aria-label="Sebaro home">
+                    <img class="logo-img" src="./images/logo.png" alt="Sebaro Logo">
+                </a>
+                <nav class="main-nav" aria-label="Main navigation">
+                    <a href="#values">Unser Versprechen</a>
+                    <a href="#services">Leistungen</a>
+                    <a href="#team">Unser Team</a>
+                    <a href="#contact">Kontakt</a>
+                </nav>
+                <div class="theme-switcher" id="theme-switcher">
+                    <span class="theme-label" id="theme-menu-label">Theme</span>
+                    <div class="theme-menu-wrap">
+                        <button id="theme-menu-button" class="theme-menu-button" type="button" aria-haspopup="true" aria-expanded="false" aria-labelledby="theme-menu-label theme-select-value">
+                            <span class="theme-select-value" id="theme-select-value">Light mode</span>
+                            <span class="theme-menu-caret" aria-hidden="true"></span>
+                        </button>
+                        <div class="theme-menu" id="theme-menu" role="menu" aria-labelledby="theme-menu-label" hidden>
+                            <button class="theme-menu-item" type="button" role="menuitemradio" data-theme-option="light" aria-checked="true">Light mode</button>
+                            <button class="theme-menu-item" type="button" role="menuitemradio" data-theme-option="dark" aria-checked="false">Dark mode</button>
+                            <button class="theme-menu-item" type="button" role="menuitemradio" data-theme-option="sexy" aria-checked="false">Sexy mode</button>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>
+                        <span class="hero-line">Ihr Partner</span>
+                        <span class="hero-line">für zuverlässige</span>
+                        <span class="hero-line">IT-Infrastruktur</span>
+                    </h1>
+                    <p>Wir planen, liefern und betreuen individuelle, zuverlässige und sichere IT-Infrastruktur für kleine und mittlere Unternehmen, von der Hardwarebeschaffung bis zur vollständigen Netzwerk- und Arbeitsplatz-Einrichtung.</p>
+                    <a class="primary-button" href="#">Jetzt Projekt starten</a>
+                </div>
+                <div class="hero-image-wrap">
+                    <img class="hero-image" src="./images/hero-img/hero-img-light.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat"><strong>0</strong> Kunden</div>
+                <div class="stat"><strong>1</strong> laufendes Projekt</div>
+                <div class="stat"><strong>3</strong> Partner</div>
+                <div class="stat"><strong>0.5</strong> erfolgreiche Jahre</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mission-section">
+        <div class="container mission-grid">
+            <div class="mission-image-wrap">
+                <img class="mission-image" src="./images/logo.png" alt="Platzhalter fÃ¼r Mission Bild">
+            </div>
+            <div class="mission-text">
+                <h2 class="section-title">Unsere Mission</h2>
+                <p>Wir helfen Unternehmen dabei, eine zuverlässige und alltagstaugliche IT-Umgebung aufzubauen. Als IT-Systemhaus planen wir Hardware, richten Netzwerke und Arbeitsplätze ein und sorgen dafür, dass neue Systeme sauber integriert, sicher konfiguriert und langfristig betreut werden. Unser Ziel ist eine IT, die stabil läuft, mit Ihrem Unternehmen mitwächst und Ihre Teams im Tagesgeschäft spürbar entlastet.</p>
+            </div>
+        </div>
+    </section>
+    <section class="how-we-work" id="services">
+        <div class="container">
+            <div class="content-narrow">
+                <h2 class="section-title">
+                    Ihre <span class="section-title-accent">individuelle IT-Infrastruktur</span> in professionellen Händen.
+                </h2>
+            </div>
+        </div>
+    </section>
+    <section class="services-section">
+        <div class="container">
+            <div class="services-grid">
+                <article class="service-box">
+                    <div>
+                        <p><span class="service-name">Server</span></p>
+                        <ul>
+                            <li>Planung und Einrichtung von Serverhardware</li>
+                            <li>Windows und Linux Grundkonfiguration</li>
+                            <li>Benutzer, Freigaben und Berechtigungen einrichten</li>
+                            <li>Strukturierte Inbetriebnahme vor Ort</li>
+                        </ul>
+                    </div>
+                    <footer>
+                        <button class="card-button" type="button">Jetzt anfragen</button>
+                    </footer>
+                </article>
+                <article class="service-box">
+                    <div>
+                        <p><span class="service-name">Netzwerke</span></p>
+                        <ul>
+                            <li>Netzwerkplanung für Büro und Gewerbe</li>
+                            <li>Switches, Access Points und Router konfigurieren</li>
+                            <li>WLAN und VLAN sauber strukturieren</li>
+                            <li>Arbeitsplätze sicher ins Netz integrieren</li>
+                        </ul>
+                    </div>
+                    <footer>
+                        <button class="card-button" type="button">Jetzt anfragen</button>
+                    </footer>
+                </article>
+                <article class="service-box">
+                    <div>
+                        <p><span class="service-name">Sicherheit</span></p>
+                        <ul>
+                            <li>Firewall und Zugriffsregeln einrichten</li>
+                            <li>Grundschutz für Clients und Server umsetzen</li>
+                            <li>Backup und Wiederherstellung mitdenken</li>
+                            <li>Sichere Fernzugriffe für Teams ermöglichen</li>
+                        </ul>
+                    </div>
+                    <footer>
+                        <button class="card-button" type="button">Jetzt anfragen</button>
+                    </footer>
+                </article>
+            </div>
+        </div>
+    </section>
+    <section class="team-section" id="team">
+        <div class="container">
+            <h2 class="section-title">Ihre IT-Partner</h2>
+            <div class="team-grid">
+                <article class="team-card">
+                    <a href=""><img class="team-photo" src="./images/avatare/avatar-michael.png" alt="Michael"></a>
+                    <a href=""><span class="name">Michael</span></a>
+                    <span class="title">Proxmox und Firewall 2</span>
+                </article>
+                <article class="team-card">
+                    <a href=""><img class="team-photo" src="./images/avatar-viktor.png" alt="Faruk"></a>
+                    <a href=""><span class="name">Faruk</span></a>
+                    <span class="title">FTP</span>
+                </article>
+                <article class="team-card">
+                    <a href=""><img class="team-photo" src="./images/avatare/avatar-daniel.png" alt="Daniel"></a>
+                    <a href=""><span class="name">Daniel</span></a>
+                    <span class="title">Developer</span>
+                </article>
+                <article class="team-card">
+                    <a href=""><img class="team-photo" src="./images/avatare/avatar-ebu.png" alt="Ebu"></a>
+                    <a href=""><span class="name">Ebu</span></a>
+                    <span class="title">Mail</span>
+                </article>
+                <article class="team-card">
+                    <a href=""><img class="team-photo" src="./images/avatare/avatar/eldar.png" alt="Eldar"></a>
+                    <a href=""><span class="name">Eldar</span></a>
+                    <span class="title">Admin PC</span>
+                </article>
+                <article class="team-card">
+                    <a href=""><img class="team-photo" src="./images/avatare/avatar-robert.png" alt="Robert"></a>
+                    <a href=""><span class="name">Robert</span></a>
+                    <span class="title">Projektleitung</span>
+                </article>
+                <article class="team-card">
+                    <a href=""><img class="team-photo" src="./images/avatare/avatar-denis-2.png" alt="Denis"></a>
+                    <a href=""><span class="name">Denis</span></a>
+                    <span class="title">Clients</span>
+                </article>
+                <article class="team-card">
+                    <a href=""><img class="team-photo" src="./images/avatare/avatar-tudor.png" alt="Tudor"></a>
+                    <a href=""><span class="name">Tudor</span></a>
+                    <span class="title">Arbeitslos</span>
+                </article>
+                <article class="team-card">
+                    <a href=""><img class="team-photo" src="./images/avatare/avatar-hojat.png" alt="Hojat"></a>
+                    <a href=""><span class="name">Hojat</span></a>
+                    <span class="title">Verschollen</span>
+                </article>
+                <article class="team-card">
+                    <a href=""><img class="team-photo" src="./images/avatare/avatar-jonas.png" alt="Jonas"></a>
+                    <a href=""><span class="name">Jonas</span></a>
+                    <span class="title">Domain Controller</span>
+                </article>
+                <article class="team-card">
+                    <a href=""><img class="team-photo" src="./images/avatare/avatar-andreas.png" alt="Andreas"></a>
+                    <a href=""><span class="name">Andreas</span></a>
+                    <span class="title">Verschollen</span>
+                </article>
+                <article class="team-card">
+                    <a href=""><img class="team-photo" src="./images/avatare/avatar-abdullah.png" alt="Abdullah"></a>
+                    <a href=""><span class="name">Abdullah</span></a>
+                    <span class="title">Clients</span>
+                </article>
+                <article class="team-card">
+                    <a href=""><img class="team-photo" src="./images/avatare/avatar-viktor.png" alt="Viktor"></a>
+                    <a href=""><span class="name">Viktor</span></a>
+                    <span class="title">DNS</span>
+                </article>
+                <article class="team-card">
+                    <a href=""><img class="team-photo" src="./images/avatare/avatar-cansen.png" alt="Cansen"></a>
+                    <a href=""><span class="name">Cansen</span></a>
+                    <span class="title">Backup</span>
+                </article>
+                <article class="team-card">
+                    <a href=""><img class="team-photo" src="./images/avatare/avatar-dominik.png" alt="Dominik"></a>
+                    <a href=""><span class="name">Dominik</span></a>
+                    <span class="title">Web</span>
+                </article>
+                <article class="team-card">
+                    <a href=""><img class="team-photo" src="./images/avatare/avatar-maxi.png" alt="Maxi"></a>
+                    <a href=""><span class="name">Maxi</span></a>
+                    <span class="title">Firewall 1</span>
+                </article>
+                <article class="team-card">
+                    <a href=""><img class="team-photo" src="./images/avatare/avatar-maxi.png" alt="Denis"></a>
+                    <a href=""><span class="name">Denis</span></a>
+                    <span class="title">Proxy/Squid</span>
+                </article>
+                <article class="team-card">
+                    <a href=""><img class="team-photo" src="./images/avatare/avatar-alex.png" alt="Alex"></a>
+                    <a href=""><span class="name">Alex</span></a>
+                    <span class="title">Monitoring</span>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="values-section" id="values">
+        <div class="container">
+            <h2 class="section-title">Warum sollten Sie uns vertrauen?</h2>
+            <div class="service-grid">
+                <article class="promise-card">
+                    <img src="./images/logo.png" alt="">
+                    <h3>Bedarfsgerechte Lösungen</h3>
+                    <p>Wir analysieren Ihre vorhandene IT-Umgebung und entwickeln eine Lösung, die zu Ihren Arbeitsabläufen,
+                        Ihrem Budget und Ihren Wachstumszielen passt.</p>
+                    <a href="#contact">Kontakt aufnehmen</a>
+                </article>
+                <article class="promise-card">
+                    <img src="./images/logo.png" alt="">
+                    <h3>Professionelle Kompetenz</h3>
+                    <p>Von Servern und Firewalls bis zu Switches, WLAN und Arbeitsplätzen setzen wir Ihre Infrastruktur
+                        fachgerecht um und achten auf saubere Dokumentation.</p>
+                    <a href="#contact">Kontakt aufnehmen</a>
+                </article>
+                <article class="promise-card">
+                    <img src="./images/logo.png" alt="">
+                    <h3>Ihr zuverlässiger Partner</h3>
+                    <p>Als langfristiger Ansprechpartner begleiten wir Sie auch nach der Inbetriebnahme mit Support,
+                        Erweiterungen und einer IT, auf die Sie sich verlassen können.</p>
+                    <a href="#contact">Kontakt aufnehmen</a>
+                </article>
+            </div>
+        </div>
+    </section>
+    
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="content-narrow">
+                <h2 class="section-title">Beschreiben Sie Ihr Projekt</h2>
+                <p class="contact-text">Senden Sie uns Ihre Projektanforderungen per Kontaktformular oder Mail an <a href="mailto:info@sebaru.de">info@sebaru.de</a>.</p>
+                <form class="contact-form" action="mailto:info@sebaru.de" method="post" enctype="text/plain">
+                    <label class="contact-field">
+                        <span>Name</span>
+                        <input type="text" name="Name" autocomplete="name" required>
+                    </label>
+                    <label class="contact-field">
+                        <span>Email</span>
+                        <input type="email" name="Email" autocomplete="email" required>
+                    </label>
+                    <label class="contact-field field-full">
+                        <span>Nachricht</span>
+                        <textarea name="Message" rows="6" required></textarea>
+                    </label>
+                    <button class="contact-submit" type="submit">Anfrage senden</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-column">
+                <h4>Copyright</h4>
+                <ul class="footer-nav">
+                    <li><a href="#">©SEBARO 2026</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <ul class="footer-nav">
+                    <li><a href="#">Impressum</a></li>
+                    <li><a href="#">Datenschutz</a></li>
+                    <li><a href="#">AGB</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
