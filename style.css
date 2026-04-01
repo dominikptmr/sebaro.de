@@ -125,7 +125,7 @@ textarea {
 }
 
 .hero,
-.how-we-work,
+.services-section-healine,
 .services-section,
 .site-footer {
     background: var(--hero-bg);
@@ -408,7 +408,7 @@ textarea {
 }
 
 /* ===== Service Intro ===== */
-.how-we-work {
+.services-section-healine {
     text-align: center;
     padding: 4.5rem 0 1.9rem;
 }
