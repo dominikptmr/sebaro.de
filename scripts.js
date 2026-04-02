@@ -60,7 +60,7 @@ function applyTheme(themeName) {
 }
 
 
-applyTheme(document.documentElement.getAttribute('data-theme') || 'light'); // setzt beim start das light theme
+applyTheme('light'); // setzt beim start das light theme
 
 // button klappt das menu auf und zu
 menuButton.addEventListener('click', function () { // reagiert auf klick auf den button
